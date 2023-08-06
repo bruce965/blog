@@ -62,8 +62,13 @@ light bulbs, depending how much energy your computer consumes when idle.
 The requirements to join the Spacemesh network are minimal:
 
 - A modern-ish computer, any computer built in the last 8 years should be okay
-- At least 256 GB of free space available, permanently committed to Spacemesh
+- At least 256 GiB of free space available, permanently committed to Spacemesh
 - Just for one time: a gaming GPU, low-end is okay but high-end will be faster
+
+> Windows reports sizes in GiB, but SSD producers use GB, keep this in mind.\
+> 1 GB = 1,000 MB = 1,000,000,000 Bytes\
+> 1 GiB = 1,024 MiB = 1,073,741,824 Bytes
+{: .prompt-tip }
 
 
 ## How do I join?

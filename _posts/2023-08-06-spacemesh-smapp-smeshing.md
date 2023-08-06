@@ -29,8 +29,13 @@ Ready? Let's get started!
 The requirements to join the Spacemesh network are minimal:
 
 - A modern-ish computer, any computer built in the last 8 years should be okay
-- At least 256 GB of free space available, permanently committed to Spacemesh
+- At least 256 GiB of free space available, permanently committed to Spacemesh
 - Just for one time: a gaming GPU, low-end is okay but high-end will be faster
+
+> Windows reports sizes in GiB, but SSD producers use GB, keep this in mind.\
+> 1 GB = 1,000 MB = 1,000,000,000 Bytes\
+> 1 GiB = 1,024 MiB = 1,073,741,824 Bytes
+{: .prompt-tip }
 
 If you don't have a gaming GPU, you can also ask a friend to lend you their
 gaming computer for a while, I have also written a
@@ -188,8 +193,8 @@ _Select the directory where you want to store your data, and click "Next"._
 
 It's time to pick a path where you want to store your data.
 
-> Make sure that you have at least 256 GB of free space where you want to store
-> your data. 256 GB is the minimum required to participate as a smesher.
+> Make sure that you have at least 256 GiB of free space where you want to store
+> your data. 256 GiB is the minimum required to participate as a smesher.
 {: .prompt-warning }
 
 > You can keep this data on an external drive or a USB stick if you want, but
@@ -225,11 +230,11 @@ always below 100%.
 > option where "Recommended PoS Size" is double of the space you want to
 > allocate to smeshing.
 >
-> As an example, let's say that you want to allocate 1 TB to smeshing and your
+> As an example, let's say that you want to allocate 1 TiB to smeshing and your
 > results are like in the previous screenshot, you should choose the second
 > option.
 >
-> If you instead wanted to allocate only 256 GB, you should choose the first
+> If you instead wanted to allocate only 256 GiB, you should choose the first
 > option.
 {: .prompt-tip }
 
@@ -244,15 +249,15 @@ Now you can tell SMAPP how much space you want to allocate to smeshing.
 ![SMAPP: PoS size](smesh-6-smeshing-4.png){: .shadow w='1316' h='763' }
 _Set the size and click "Next"._
 
-The minimum space you can allocate is 256 GB, and each unit is 64 GB, so,
-assuming you want to allocate 256 GB, you should allocate 4 units.
+The minimum space you can allocate is 256 GiB, and each unit is 64 GiB, so,
+assuming you want to allocate 256 GiB, you should allocate 4 units.
 
-> 4 units × 64 GB/unit = 256 GB\
-> 8 units × 64 GB/unit = 512 GB\
-> 16 units × 64 GB/unit = 1 TB\
+> 4 units × 64 GiB/unit = 256 GiB\
+> 8 units × 64 GiB/unit = 512 GiB\
+> 16 units × 64 GiB/unit = 1 TiB\
 > etc...
 
-> My personal recommendation is to start with 256 GB to understand how the
+> My personal recommendation is to start with 256 GiB to understand how the
 > process works. Unfortunately you can not change this size later, but still,
 > since this operation might take longer than you expect, I would still
 > recommend to start small, and then, eventually, if you feel like you want to,
