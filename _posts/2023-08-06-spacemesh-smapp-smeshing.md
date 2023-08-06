@@ -290,7 +290,7 @@ _Everything is ready to go, click "Create Data"._
 _Spacemesh is now crunching numbers, all you have to do now is wait..._
 
 Spacemesh will start filling your space with the PoS data, it will take a few
-hours to a few days depending on how much time you decided to allocate and how
+hours to a few days depending on how much space you decided to allocate and how
 powerful your GPU is.
 
 > The community shared a

@@ -201,7 +201,8 @@ https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-clu
 > If you plan to add more nodes to this cluster, you should replace `127.0.0.1`
 > with the private IP of your server, which you can check from your instance page.
 > Or even better, create a domain name and set it to the private IP of your server,
-> then use it as the control plane endpoing, so you can change it in the future.
+> then use it as the control plane endpoint, so you can change it in the future.
+{: .prompt-info }
 
 ```bash
 sudo kubeadm init --control-plane-endpoint=127.0.0.1 --cri-socket=unix:///var/run/cri-dockerd.sock

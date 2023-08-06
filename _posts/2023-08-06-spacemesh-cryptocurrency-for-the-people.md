@@ -24,7 +24,7 @@ with the hardware that you already posses; no money investment necessary.
 To keep it simple, like "regular" currencies, cryptocurrencies are (or were?)
 backed by the value of some physical assets.
 
-In the case of **Bitcoin**, the value is backed my that of computing power and
+In the case of **Bitcoin**, the value is backed by that of computing power and
 electricity invested to mine the coins, this is called _proof-of-work_ or PoW;
 Bitcoin works like a lottery, only a few people win each "round".
 Unfortunately this means that to join Bitcoin mining, you would have to invest
