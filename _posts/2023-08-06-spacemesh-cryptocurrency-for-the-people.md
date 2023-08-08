@@ -2,7 +2,7 @@
 title: "Spacemesh: Cryptocurrency for the People"
 date: 2023-08-06 13:00:27 +0200
 categories: [Cryptos, Spacemesh]
-tags: [cryptos, spacemesh]
+tags: [cryptos, Spacemesh]
 ---
 
 Starting August 11th 2023, [Spacemesh](https://spacemesh.io/), the

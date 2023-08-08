@@ -2,7 +2,7 @@
 title: Oracle Cloud Free ARM Kubernetes Cluster
 date: 2023-08-05 15:01:34 +0200
 categories: [Software, Kubernetes]
-tags: [kubernetes, docker, cloud, oracle, free]
+tags: [Kubernetes, Docker, cloud, Oracle, free, Linux]
 ---
 
 This is a guide to install a single-node Kubernetes cluster on a free

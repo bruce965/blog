@@ -2,7 +2,7 @@
 title: "Spacemesh: Smeshing with SMAPP"
 date: 2023-08-06 16:37:32 +0200
 categories: [Cryptos, Spacemesh]
-tags: [cryptos, spacemesh]
+tags: [cryptos, Spacemesh]
 img_path: /assets/img/posts/2023/
 ---
 

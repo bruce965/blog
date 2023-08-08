@@ -2,7 +2,7 @@
 title: "Spacemesh: Smeshing with Friends"
 date: 2023-08-06 16:44:03 +0200
 categories: [Cryptos, Spacemesh]
-tags: [cryptos, spacemesh]
+tags: [cryptos, Spacemesh]
 hidden: true
 ---
 
