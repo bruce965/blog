@@ -2,7 +2,7 @@
 title: Getting Started with Git on Windows, the Easy Way
 date: 2017-02-01 13:06:00 +0100
 categories: [Software, Git]
-tags: [git, Windows]
+tags: [Git, Windows]
 image: git-cover.png
 img_path: /assets/img/posts/2017/
 ---

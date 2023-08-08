@@ -2,7 +2,7 @@
 title: Generate RSA Key Pairs on Windows or Linux
 date: 2017-02-07 08:47:54 +0100
 categories: [Software, Git]
-tags: [git, Windows, Linux]
+tags: [Git, Windows, Linux]
 img_path: /assets/img/posts/2017/
 ---
 
