@@ -7,7 +7,7 @@ tags: [Raspberry Pi, Git, Linux]
 
 Do you want a Git repository to share your work among your computers but you don't want to rely on third-party services? You are lucky, it's super-easy, all you need is a Raspberry Pi or a linux computer.
 
-> Tip: want to get started with Git? Check out my [introduction to Git on Windows](/git-windows-introduction/), it's super-easy.
+> Tip: want to get started with Git? Check out my [introduction to Git on Windows]({% post_url 2017-02-01-git-windows-introduction %}), it's super-easy.
 
 ## Setup
 
@@ -36,7 +36,7 @@ ssh-rsa AAAAB3NzaCAAAADAQAAABA/Long+Sequence+HereAAR6bmLNSGiWK9B git@raspberrypi
 ssh-rsa AAAAB3c2uTF4V1ERAAAAR6bmLNSGi/Another+Key+HereAAAGiWKyc2E9B git@raspberrypi
 ```
 
-> Tip: if you need help creating a key pair, check out my guide to [generate your own RSA key pair](/generate-rsa-key/). Use your private key to authenticate when connecting from the development machine and copy your public key in the file above.
+> Tip: if you need help creating a key pair, check out my guide to [generate your own RSA key pair]({% post_url 2017-02-07-generate-rsa-key %}). Use your private key to authenticate when connecting from the development machine and copy your public key in the file above.
 
 ## Creating a New Repository
 
