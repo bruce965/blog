@@ -78,7 +78,7 @@ openssl rsa -in mykey.pem -out mykey.pub -pubout
 
 ## Windows TL;DR
 
-1. Download [https://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe](puttygen.exe);
+1. Download [puttygen.exe](https://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe);
 2. Click *"Generate"* and move the mouse around a bit.
 
 If you need your key in PuTTY format, click *"Save private key"*; or if you need your key in OpenSSH format, click *"Conversions" » "Export OpenSSH key"*.
