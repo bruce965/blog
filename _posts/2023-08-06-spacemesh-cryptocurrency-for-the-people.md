@@ -98,25 +98,43 @@ environment and takes much less time; and remember, you will need the GPU only
 one time for a few hours.
 
 
-## When will I start getting coins?
+## When will I start receiving rewards?
 
 Once you have become a smesher, you will have to wait for the first PoET round,
-which happens every two Sundays at 8:00 AM UTC.
+which happens every two Sundays at 8:00 am UTC.
 
 Once the PoET round starts, you will have 12 hours to verify your PoS data
 and submit your proof.
 SMAPP will do this automatically for you, but it's very important that your
 computer is powered on during this time window.
+<span id="next-poet-outer" style="display: none">Next PoET round starts at <span id="next-poet"></span>.</span>
 
-14 days later (two Sundays later), you will have to verify that you still have
-your PoS data on your drive, so it's important again that your computer is
-powered on during this time window.
+14 days later<span id="next-validation-outer" style="display: none">, on <span id="next-validation"></span></span>,
+you will have to verify that you still have your PoS data on your drive, so it's
+important again that your computer is powered on during this time window.
 
-10 days later, you will start receiving rewards. You will keep receiving rewards
+5 days later<span id="next-epoch-outer" style="display: none">, on <span id="next-epoch"></span></span>,
+you will start receiving rewards. You will keep receiving rewards
 for 14 days all the time your computer is powered on. You can temporarily turn
 it off during these 14 days, and you will temporarily stop receiving rewards,
 but you will resume receiving rewards as soon as you turn it back on.
 
+<script type="text/javascript">(() => {
+  const locale = {% if page.lang %}{{ post.lang | jsonify }}{% else %}undefined{% endif %};
+  const format = { dateStyle: 'full', timeStyle: 'long' };
+
+  const poet = Math.ceil(Date.now() / 12096e5) * 12096e5 + 3312e5;
+  document.getElementById('next-poet').innerText = new Date(poet).toLocaleString(locale, format);
+  document.getElementById('next-poet-outer').style.display = '';
+
+  const validation = poet + 12096e5;
+  document.getElementById('next-validation').innerText = new Date(validation).toLocaleString(locale, format);
+  document.getElementById('next-validation-outer').style.display = '';
+
+  const epoch = validation + 3888e5;
+  document.getElementById('next-epoch').innerText = new Date(epoch).toLocaleString(locale, format);
+  document.getElementById('next-epoch-outer').style.display = '';
+})()</script>
 
 ## Is there something I need to be aware of?
 
