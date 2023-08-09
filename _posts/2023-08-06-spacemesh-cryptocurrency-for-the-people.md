@@ -102,22 +102,22 @@ one time for a few hours.
 
 Once you have become a smesher, you will have to wait for the first PoET round,
 which happens every two Sundays at 8:00 am UTC.
+<span id="next-poet-outer" style="display: none">Next PoET round starts on <span id="next-poet"></span>.</span>
 
 Once the PoET round starts, you will have 12 hours to verify your PoS data
 and submit your proof.
 SMAPP will do this automatically for you, but it's very important that your
-computer is powered on during this time window.
-<span id="next-poet-outer" style="display: none">Next PoET round starts at <span id="next-poet"></span>.</span>
+computer remains powered on during this time window.
 
-14 days later<span id="next-validation-outer" style="display: none">, on <span id="next-validation"></span></span>,
+14 days later<span id="next-validation-outer" style="display: none"> on <span id="next-validation"></span></span>,
 you will have to verify that you still have your PoS data on your drive, so it's
 important again that your computer is powered on during this time window.
 
-5 days later<span id="next-epoch-outer" style="display: none">, on <span id="next-epoch"></span></span>,
+5 days later<span id="next-epoch-outer" style="display: none"> on <span id="next-epoch"></span></span>,
 you will start receiving rewards. You will keep receiving rewards
 for 14 days all the time your computer is powered on. You can temporarily turn
-it off during these 14 days, and you will temporarily stop receiving rewards,
-but you will resume receiving rewards as soon as you turn it back on.
+it off when necessary and you will temporarily stop receiving rewards;
+you will resume receiving rewards soon after turning it back on.
 
 <script type="text/javascript">(() => {
   const locale = {% if page.lang %}{{ post.lang | jsonify }}{% else %}undefined{% endif %};
