@@ -88,7 +88,7 @@ If you don't have a gaming GPU, the process has a few more steps: you will need
 to borrow from a friend for a few hours a gaming PC with a gaming GPU.
 
 I have also written a
-[step-by-step guide to do smeshing from a friend's computer]({% post_url 2023-08-26-spacemesh-smeshing-with-friends %}).
+[step-by-step guide to do smeshing from a friend's computer]({% post_url 2023-08-06-spacemesh-smeshing-with-friends %}).
 
 If you don't have a gaming GPU and you don't have any friends with a gaming GPU,
 you can also do it with a CPU with SMAPP, but be warned: it might take a long
