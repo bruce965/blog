@@ -118,7 +118,7 @@ No server connection required, all conversions are performed client-side.
 
   /** @type {{ [format: string]: (data: string) => Uint8Array }} */
   const decoders = {
-    'base64': data => str2bin(atob(data)), // TODO: don't use atob
+    'base64': data => str2bin(atob(data)), /* TODO: don't use atob */
     'hex': data => {
       data = data.replace(/[^a-zA-Z0-9]/g, '');
 
@@ -141,14 +141,12 @@ No server connection required, all conversions are performed client-side.
 
   /** @type {{ [format: string]: (data: Uint8Array) => string }} */
   const encoders = {
-    'base64': data => btoa(bin2str(data)), // TODO: don't use btoa
+    'base64': data => btoa(bin2str(data)), /* TODO: don't use btoa */
     'hex': data => [...data].map(b => b.toString(16).padStart(2, '0')).join(''),
     'json': data => JSON.stringify(bin2str(data)).replace(/^"|"$/g, ''),
     'uri-component': data => encodeURIComponent(bin2str(data)),
     'utf8': bin2str,
   };
-
-  //#region
 
   const NO_CONVERTER_AVAILABLE = "No converter available.";
 
@@ -206,7 +204,7 @@ No server connection required, all conversions are performed client-side.
   });
 
   const refresh = (value, from, to) => {
-    // HACK: for the "copy to clipboard" script.
+    /* HACK: for the "copy to clipboard" script. */
     code1.innerText = code1.value;
     code2.innerText = code2.value;
 
@@ -281,7 +279,5 @@ No server connection required, all conversions are performed client-side.
 
   convert(code1.value, format1, format2, code2, error1, error2, false);
   refresh(code1.value, format1, format2);
-
-  //#endregion
 })()</script>
 {% endraw %}
