@@ -216,7 +216,33 @@ PoST.
 Unlike PoS, which is a one-time operation, PoST is an operation that needs to be
 repeated once every two weeks.
 
-Now you have to choose how much CPU you want to allocate to PoST.
+> The PoST will generate some random _nonces_ which might or might not turn out
+> to be valid. The only way to know if a nonce is valid is to compare it against
+> all of your PoS data. Basically your computer will have to read all PoS data.
+>
+> If the nonce turns out to not be valid, your computer will have to generate a
+> new one and try again from the beginning, reading all of your data again.
+>
+> You can try with more than one nonce at a time, the highest recommended value
+> is 288. This way you will have higher chances of finding at least one valid
+> nonce without having to read all of your data multiple times, but your CPU
+> will be more stressed because it will have to perform more computations.
+>
+> This operation is called "finding a proof", it will be performed every 14 days
+> <span id="next-validation-outer" style="display: none">(the next round is on <span id="next-validation"></span>)</span>,
+> and it must be performed within 12 hours. If your computer can't find a proof
+> within 12 hours you won't be able to participate to the Spacemesh network and
+> you won't receive any rewards.
+{: .prompt-info }
+
+<script type="text/javascript">(() => {
+  const locale = {% if page.lang %}{{ post.lang | jsonify }}{% else %}undefined{% endif %};
+  const format = { dateStyle: 'full', timeStyle: 'long' };
+
+  const poet = Math.ceil(Date.now() / 12096e5) * 12096e5 + 3312e5;
+  document.getElementById('next-validation').innerText = new Date(poet).toLocaleString(locale, format);
+  document.getElementById('next-validation-outer').style.display = '';
+})()</script>
 
 ![SMAPP: benchmark](smesh-6-smeshing-3.png){: .shadow w='1316' h='763' }
 _Click "Test chosen Options" and select the one you prefer, then click "Next"._
@@ -264,10 +290,12 @@ assuming you want to allocate 256 GiB, you should allocate 4 units.
 > start over and go bigger.
 {: .prompt-tip }
 
-### Proof of Work
+<span id="proof-of-work"></span> <!-- legacy -->
 
-It's time for the _proof-of-work_ or PoW step in Spacemesh, which luckily only
-has to be done once, since it's the most time and energy consuming step.
+### Processor
+
+It's time for the longest and most energy consuming step in Spacemesh, which
+luckily only has to be done only once.
 
 Let me repeat it again: you can also do it with a CPU, but it will take a
 long time and probably waste more electricity than doing it with a gaming GPU.
@@ -278,13 +306,15 @@ theirs for a few hours, I have written a
 ![SMAPP: PoS processor](smesh-6-smeshing-5.png){: .shadow w='1316' h='763' }
 _The best option is already selected, just click "Next"._
 
-### Last steps
+<span id="last-steps"></span> <!-- legacy -->
+
+### Rewards
 
 SMAPP will now let you choose the address of the wallet where you want your
 rewards to be deposited.
 
 ![SMAPP: rewards](smesh-6-smeshing-6.png){: .shadow w='1316' h='763' }
-_The address of your walled should be pre-compiled, just click "Next"._
+_The address of your walled should already be there, just click "Next"._
 
 And at last, it's time to press the final button!
 
@@ -292,7 +322,7 @@ And at last, it's time to press the final button!
 _Everything is ready to go, click "Create Data"._
 
 ![SMAPP: generating data](smesh-6-smeshing-8.png){: .shadow w='1316' h='763' }
-_Spacemesh is now crunching numbers, all you have to do now is wait..._
+_Spacemesh is now generating your PoS data, all you have to do now is wait..._
 
 Spacemesh will start filling your space with the PoS data, it will take a few
 hours to a few days depending on how much space you decided to allocate and how
