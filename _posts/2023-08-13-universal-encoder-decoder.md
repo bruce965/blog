@@ -118,7 +118,7 @@ No server connection required, all conversions are performed client-side.
 
   /** @type {{ [format: string]: (data: string) => Uint8Array }} */
   const decoders = {
-    'base64': data => str2bin(atob(data)), /* TODO: don't use atob */
+    'base64': data => new Uint8Array(atob(data).split('').map(c => c.charCodeAt(0))),
     'hex': data => {
       data = data.replace(/[^a-zA-Z0-9]/g, '');
 
@@ -141,7 +141,7 @@ No server connection required, all conversions are performed client-side.
 
   /** @type {{ [format: string]: (data: Uint8Array) => string }} */
   const encoders = {
-    'base64': data => btoa(bin2str(data)), /* TODO: don't use btoa */
+    'base64': data => btoa(String.fromCharCode(...data)),
     'hex': data => [...data].map(b => b.toString(16).padStart(2, '0')).join(''),
     'json': data => JSON.stringify(bin2str(data)).replace(/^"|"$/g, ''),
     'uri-component': data => encodeURIComponent(bin2str(data)),
