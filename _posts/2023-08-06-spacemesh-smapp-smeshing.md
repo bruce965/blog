@@ -39,7 +39,7 @@ The requirements to join the Spacemesh network are minimal:
 
 If you don't have a gaming GPU, you can also ask a friend to lend you their
 gaming computer for a while, I have also written a
-[step-by-step guide to do smeshing from a friend's computer]({% post_url 2023-08-06-spacemesh-smeshing-with-friends %}).
+[step-by-step guide to do smeshing from a friend's computer]({% post_url 2023-08-15-spacemesh-smeshing-with-friends %}).
 
 If you don't have a gaming GPU and you don't have any friends with a gaming GPU,
 you can also do it with a CPU, just keep following this guide, but be warned:
@@ -301,7 +301,7 @@ Let me repeat it again: you can also do it with a CPU, but it will take a
 long time and probably waste more electricity than doing it with a gaming GPU.
 If you don't have a gaming GPU, you should ask a friend of yours to lend you
 theirs for a few hours, I have written a
-[step-by-step guide to do smeshing from a friend's computer]({% post_url 2023-08-06-spacemesh-smeshing-with-friends %}).
+[step-by-step guide to do smeshing from a friend's computer]({% post_url 2023-08-15-spacemesh-smeshing-with-friends %}).
 
 ![SMAPP: PoS processor](smesh-6-smeshing-5.png){: .shadow w='1316' h='763' }
 _The best option is already selected, just click "Next"._
