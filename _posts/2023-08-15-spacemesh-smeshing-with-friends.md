@@ -60,7 +60,7 @@ somewhere on the USB hard drive that you brought to your friend.
 
 > Make sure to delete this folder from your friend's computer. If your friend
 > accidentally starts SMAPP with your settings while you are also running it,
-> your node might be permanently banned.
+> your node might be [permanently banned](https://spacemesh.io/blog/community-clarification-equivocation/).
 {: .prompt-warning }
 
 You might also want to uninstall SMAPP from your friend's computer if they are
