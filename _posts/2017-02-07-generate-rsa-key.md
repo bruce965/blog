@@ -50,7 +50,7 @@ Windows users also have another option: PuTTY format. You should only store your
 
 Look for *puttygen.exe* on [PuTTY website](http://www.putty.org/).
 
-![](rsa-puttygen.png)
+![PuTTY Key Generator main screen.](rsa-puttygen.png)
 
 With the default options, *PuTTY Key Generator* will generate a **2048 bit RSA** key, this is probably what you need. You can change the key type if you want something different.
 
